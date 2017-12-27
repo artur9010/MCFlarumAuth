@@ -1,0 +1,13 @@
+name: FlarumAuth
+version: 1.0-SNAPSHOT
+author: artur9010
+main: pl.artur9010.FlarumAuth.FlarumAuthPlugin
+webiste: https://artur9010.pl/
+description: Login plugin, that users Flarum credentials.
+
+commands:
+  flarumdev:
+    description: dev command
+  login:
+    description: Zaloguj sie na serwerze
+    aliases: [l]
