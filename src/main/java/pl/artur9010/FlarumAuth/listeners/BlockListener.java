@@ -10,14 +10,14 @@ public class BlockListener implements Listener {
 
     @EventHandler(ignoreCancelled = true)
     public void onBlockPlace(BlockPlaceEvent event) {
-        if (FlarumAuthPlugin.isLoggedIn(event.getPlayer().getName())){
+        if (!FlarumAuthPlugin.isLoggedIn(event.getPlayer().getName())){
             event.setCancelled(true);
         }
     }
 
     @EventHandler(ignoreCancelled = true)
     public void onBlockBreak(BlockBreakEvent event) {
-        if (FlarumAuthPlugin.isLoggedIn(event.getPlayer().getName())){
+        if (!FlarumAuthPlugin.isLoggedIn(event.getPlayer().getName())){
             event.setCancelled(true);
         }
     }
