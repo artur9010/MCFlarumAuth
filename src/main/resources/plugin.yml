@@ -11,3 +11,5 @@ commands:
   login:
     description: Zaloguj sie na serwerze
     aliases: [l]
+  changepass:
+    description: Instrukcja zmiany hasla

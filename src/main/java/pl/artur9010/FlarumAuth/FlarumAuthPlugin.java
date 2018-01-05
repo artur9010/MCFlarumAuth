@@ -10,6 +10,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 import org.json.JSONObject;
+import pl.artur9010.FlarumAuth.commands.ChangepassCommand;
 import pl.artur9010.FlarumAuth.commands.FlarumDevCommand;
 import pl.artur9010.FlarumAuth.commands.LoginCommand;
 import pl.artur9010.FlarumAuth.listeners.*;
@@ -61,6 +62,7 @@ public class FlarumAuthPlugin extends JavaPlugin {
 
         getCommand("flarumdev").setExecutor(new FlarumDevCommand());
         getCommand("login").setExecutor(new LoginCommand());
+        getCommand("changepass").setExecutor(new ChangepassCommand());
     }
 
     public void onDisable(){
